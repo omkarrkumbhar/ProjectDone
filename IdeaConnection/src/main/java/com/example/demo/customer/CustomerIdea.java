@@ -15,7 +15,6 @@ public class CustomerIdea {
 private int id;
 private String name;
 private String lastName;
-private String pinCode;
 public int getId() {
 	return id;
 }
