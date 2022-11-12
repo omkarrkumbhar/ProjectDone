@@ -16,7 +16,7 @@ private int id;
 private String name;
 private String lastName;
 private String pinCode;
-private String city;
+
 
 public String getLastName() {
 	return lastName;
