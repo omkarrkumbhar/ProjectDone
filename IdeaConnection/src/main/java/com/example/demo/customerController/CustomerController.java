@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +23,12 @@ public class CustomerController {
 	public ResponseEntity<CustomerIdea>  dataSave(@RequestBody CustomerIdea customerIdea){
 		CustomerIdea idea=customerService.save(customerIdea);
 		return ResponseEntity.status(HttpStatus.ACCEPTED).body(idea);
+		
+	}
+	@GetMapping("/custId/{id}")
+	public ResponseEntity<CustomerIdea> getId(@PathVariable("id") Integer id){
+		CustomerIdea idea=customerService.getdta(id);
+		return ResponseEntity.status(HttpStatus.FOUND).body(idea); 
 		
 	}
 }
