@@ -27,7 +27,7 @@ public class CustomerController {
 	}
 	@GetMapping("/custId/{id}")
 	public ResponseEntity<CustomerIdea> getId(@PathVariable("id") Integer id){
-		CustomerIdea idea=customerService.getdta(id);
+		CustomerIdea idea=customerService.getData(id);
 		return ResponseEntity.status(HttpStatus.FOUND).body(idea); 
 		
 	}

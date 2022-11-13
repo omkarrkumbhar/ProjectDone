@@ -18,7 +18,7 @@ public class CustomerSerImpl implements CustomerService {
 	}
 
 	@Override
-	public CustomerIdea getdta(Integer id) {
+	public CustomerIdea getData(Integer id) {
 		
 		return customerRepo.getById(id);
 	}
