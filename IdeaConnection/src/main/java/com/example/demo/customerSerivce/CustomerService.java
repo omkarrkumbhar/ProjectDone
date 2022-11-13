@@ -5,4 +5,5 @@ import com.example.demo.customer.CustomerIdea;
 public interface CustomerService {
 
 	public CustomerIdea save(CustomerIdea customerIdea);
+	public CustomerIdea getdta(Integer id);
 }
