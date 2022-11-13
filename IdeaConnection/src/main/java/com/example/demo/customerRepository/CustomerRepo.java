@@ -8,4 +8,5 @@ import com.example.demo.customer.CustomerIdea;
 @Repository
 public interface CustomerRepo extends CrudRepository<CustomerIdea, Integer> {
 
+	public CustomerIdea getById(Integer id);
 }
