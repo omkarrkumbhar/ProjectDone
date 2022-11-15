@@ -6,4 +6,5 @@ public interface CustomerService {
 
 	public CustomerIdea save(CustomerIdea customerIdea);
 	public CustomerIdea getData(Integer id);
+	
 }
