@@ -1,5 +1,8 @@
 package com.demo;
 
 public class Demo1 {
-System.out.println("Hi pull request");
+	public static void main(String[] args) {
+		System.out.println("Hi pull request");
+	}
+
 }
